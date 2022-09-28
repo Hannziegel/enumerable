@@ -1,8 +1,8 @@
-module MyEnurable
-  def all?
+module MyEnumerable
+  def all
     puts "all"
   end
-  def any?
+  def any
     puts "any"
   end
   def filter

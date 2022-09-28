@@ -1,7 +1,9 @@
-require 'MyEnurable'
+require_relative 'my_enumerable.rb'
 
 class MyList
-  include MyEnurable
+  include MyEnumerable
 end
 
-MyList.all
+list = MyList.new
+
+list.all
