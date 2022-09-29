@@ -7,19 +7,21 @@ module MyEnumerable
         break
       end
     end
-    return check
+    check
   end
+
   def any?
     @list.each do |element|
       return true if yield element
     end
     false
   end
+
   def filter
-    newArray = []
+    new_array = []
     @list.each do |element|
-      newArray.push(element) if yield element
+      new_array.push(element) if yield element
     end
-    newArray
+    new_array
   end
 end
