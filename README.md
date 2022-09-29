@@ -2,10 +2,8 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Decoding a Morse code message
-
 > Description the project.
--Decoding Morse code message Ruby and you can help yourself by automating the process.
+-Creating an enumerable and usising module nad class to implement a subset of the functionality of Enumerable.
 
 ## Built With
 - RUBY
