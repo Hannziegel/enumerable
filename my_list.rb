@@ -7,6 +7,17 @@ class MyList
   def initialize(*elements)
     @list = elements
   end
+
+  def each
+    return to_enum(:each) unless block_given?
+
+    counter = 0
+    while counter < @list.length
+      yield(@list[counter])
+      counter += 1
+    end
+    @list
+  end
 end
 
 list = MyList.new(1, 2, 3, 4) # <MyList: @list=[1, 2, 3, 4]>
